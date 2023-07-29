@@ -25,6 +25,35 @@ scipy - advanced scientific computing, including functions for optimization,
 scikit-learn - Machine Learning library for Python(not deep learning)
 
 '''
-def sum(a,b):
-    return (a+b)
-print(sum(6,7))
+# import numpy as np
+# import pandas as pd
+# import matplotlib.pyplot as plt
+
+# # print(!head PandaExample/data/sales_data.csv)
+# sales = pd.read_csv(
+#     'PandaExample/data/sales_data.csv',
+#     parse_dates=['Date'])
+# print(sales)
+
+# print(sales.head())
+# print(sales.shape)    #Gives out no. of rows and column
+# print(sales.info())   #gives column title and type
+# print(sales.describe())   #gives statistical data 
+
+# sum_of_numbers = 0
+
+# # # perform the calculation here
+# for i in range(18,535):
+#     if i % 7 == 0:
+#         sum_of_numbers = sum_of_numbers + i
+# print(sum_of_numbers)
+
+start = 18
+end = 534
+divisible_by_7_sum = 0
+
+for num in range(start, end + 1):
+    if num % 7 == 0:
+        divisible_by_7_sum += num
+
+print("The sum of all numbers divisible by 7 between {} and {} is: {}".format(start, end, divisible_by_7_sum))
